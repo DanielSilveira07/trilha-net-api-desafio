@@ -18,7 +18,7 @@ namespace TrilhaApiDesafio.Controllers
         [HttpGet("{id}")]
         public IActionResult ObterPorId(int id)
         {
-            // TODO: Buscar o Id no banco utilizando o E
+            // TODO: Buscar o Id no banco utilizando o EF
             var tarefa = _context.Tarefas.Find(id);
             // TODO: Validar o tipo de retorno. Se não encontrar a tarefa, retornar NotFound,
             if (tarefa == null)
@@ -106,7 +106,7 @@ namespace TrilhaApiDesafio.Controllers
             // TODO: Remover a tarefa encontrada através do EF e salvar as mudanças (save changes)
             _context.Tarefas.Remove(tarefaBanco);
             _context.SaveChanges();
-
+            
             return NoContent();
         }
     }
