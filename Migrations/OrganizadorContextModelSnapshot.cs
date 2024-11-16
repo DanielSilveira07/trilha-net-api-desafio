@@ -11,7 +11,7 @@ using TrilhaApiDesafio.Context;
 namespace TrilhaApiDesafio.Migrations
 {
     [DbContext(typeof(OrganizadorContext))]
-    partial class OrganizadorContextModelSnapshot : ModelSnapshot
+    partial class OrganizadorContextModelSnapshot : ModelSnapsho
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
         {

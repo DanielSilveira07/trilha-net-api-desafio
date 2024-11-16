@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace TrilhaApiDesafio.Migrations
 {
-    public partial class Initial : Migration
+    public partial class Initial : Migratio
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
